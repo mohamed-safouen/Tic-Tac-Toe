@@ -62,18 +62,7 @@ function click(i,j) {
 
 
 
-function turnd2() {
 
-    if (y == 0) {
-        d2 = document.getElementById("d2").innerHTML = "X";
-
-        y = 1;
-    } else {
-        d2 = document.getElementById("d2").innerHTML = "O";
-
-        y = 0;
-    }
-}
 
 function turnd3() {
 
