@@ -27,18 +27,16 @@ ol {
     font-style: italic;
 }
 
-#table {
-    border: 8px solid black;
-    width: 500px;
-    height: 500px;
-
+#table {display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid black;
+    width:  322px;
+    height: 322px;
     margin: auto;
 
 }
 
-#box {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+.box {
     font-family: "Permanent Marker", cursive;
     text-align: center;
     width: 100px;
