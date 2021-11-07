@@ -1,5 +1,5 @@
 body {
-    background-color: lightskyblue
+    background-color: beige;
 }
 
 header {
@@ -27,11 +27,30 @@ ol {
     font-style: italic;
 }
 
-#table {display: grid;
+#Player_turn {
+    position: absolute;
+    top: 350px;
+    left: 33%;
+    background-color: white;
+    color: black;
+    font-family: Algerian;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 25%;
+    text-align: center;
+    width: 140px;
+    height: 25px;
+
+}
+
+#table {
+    position: absolute;
+    top: 400px;
+    left: 25%;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 10px solid black;
-    width:  322px;
-    height: 322px;
+    width: 350px;
+    height: 350px;
     margin: auto;
 
 }
@@ -39,8 +58,8 @@ ol {
 .box {
     font-family: "Permanent Marker", cursive;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     border: 5px solid black;
     cursor: pointer;
     line-height: 100px;
@@ -48,6 +67,9 @@ ol {
 }
 
 .reset {
+    position: absolute;
+    top: 800px;
+    left: 33%;
     background-color: white;
     font-family: Algerian;
     font-size: 20px;
