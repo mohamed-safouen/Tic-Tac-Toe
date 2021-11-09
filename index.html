@@ -4,8 +4,10 @@
     <title> Tic-Tac-Toe</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
+
 </head>
 <body onload="grid()">
+
 <HEADER>Tic-Tac-Toe</HEADER>
 <h1>How to play</h1>
 <ol>
@@ -22,48 +24,12 @@
 <div id="Player_turn"></div>
 
 
-<div id="table">
-    <div class="box" onclick="turn()"></div>
-</div>
+<section id="table">
+    <div id="div0" class="box" onclick="turn()"></div>
+</section>
 <div class="reset" onclick="newgame()">New Game</div>
 
-
-<script type="text/javascript " src="script.js">
-
-
-    /*Specs:
-    1-function when we click on box we have "X" for first player and "O" for second player.
-    2-we have named boxes for each box of the game big container with (d1,d2.....d9)
-    so we got each condition of win of the "X" player then the "O" player,finally Tie Game.
-         if
-    * condition 1 "X" win
-                       d1="X"and d2="X" and d3="X" (player "X" win).
-             else if   d1="X" and d4="X" and d7="X" (player "X" win).
-             else if   d1="X" and d5="X" and d9="X" (player "X" win).
-             else if   d2="X" and d5="X" and d8="X" (player "X" win).
-             else if   d3="X" and d6="X" and d9="X" (player "X" win).
-             else if   d4="X" and d5="X" and d6="X" (player "X" win).
-             else if   d7="X" and d8="X" and d9="X" (player "X" win).
-             else if   d3="X" and d5="X" and d7="X" (player "X" win).
-        else if
-    *condition 2 "O" win
-                       d1="O" and d2="O" and d3="O" (player "O" win).
-             else if   d1="O" and d4="O" and d7="O" (player "O" win).
-             else if   d1="O" and d5="O" and d9="O" (player "O" win).
-             else if   d2="O" and d5="O" and d8="O" (player "O" win).
-             else if   d3="O" and d6="O" and d9="O" (player "O" win).
-             else if   d4="O" and d5="O" and d6="O" (player "O" win).
-             else if   d7="O" and d8="O" and d9="O" (player "O" win).
-             else if   d3="O" and d5="O" and d7="O" (player "O" win).
-        else
-    *condition 3 Tie game
-            (d1="X" or d1="O")and(d2="X" or d2="O")and(d3="X" or d3="O")
-            and(d4="X" or d4="O")and(d5="X" or d5="O")and(d6="X" or d6="O").
-            and(d7="X" or d7="O")and(d8="X" or d8="O")and(d9="X" or d9="O").
-    3-reset the Game.*/
-
-
-</script>
+<script type="text/javascript " src="script.js"></script>
 
 
 </body>

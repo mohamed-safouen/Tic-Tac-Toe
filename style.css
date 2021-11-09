@@ -44,11 +44,12 @@ ol {
 }
 
 #table {
+    border: 10px solid black;
     position: absolute;
     top: 400px;
     left: 25%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     width: 350px;
     height: 350px;
     margin: auto;
@@ -56,15 +57,18 @@ ol {
 }
 
 .box {
+
     font-family: "Permanent Marker", cursive;
     text-align: center;
     width: auto;
     height: auto;
-    border: 5px solid black;
+    border: 3px solid black;
     cursor: pointer;
     line-height: 100px;
     font-size: 90px;
+
 }
+
 
 .reset {
     position: absolute;
