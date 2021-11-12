@@ -44,29 +44,69 @@ ol {
 }
 
 #table {
-    border: 10px solid black;
+
     position: absolute;
     top: 400px;
     left: 25%;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin: auto;
-
 }
 
-.box {
+span {
 
     font-family: "Permanent Marker", cursive;
     text-align: center;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
     border: 3px solid black;
     cursor: pointer;
     line-height: 100px;
-    font-size: 90px;
+    font-size: 50px;
 
+}
+#O{position: absolute;
+    top: 23px;
+    left: 23px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: inline-block;
+}
+#X {
+    color: #000;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 300px;
+    height: 300px;
+}
+
+#X:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 70px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#X:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 70px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
