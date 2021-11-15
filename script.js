@@ -6,36 +6,40 @@ cross.setAttribute("id","X");
 let circle=document.createElement("div");
 circle.setAttribute("id","O");
 z = document.createElement("span");
-let id =0
+
+let id =0;
 function grid() {
     for (let i = 0; i < f.length; i++) {
         f[i] = [];
         for (let j=0;j<f.length;j++) {
             z = document.createElement("span");
-            z.setAttribute("id",id);
-            tab.append(z);
             f[i][j] = id;
-               id++
-
+            z.setAttribute("id", id);
+            id++;
+            tab.append(z);
         }
-    }return id
+        }
+    return z;
+
 }
 let y = 0;
 Player.innerHTML = "This is X Turn";
- function turn(i,j) {
+function turn(i,j) {
+     if (y == 0) {
+         Player.innerHTML = "This is O Turn";
+         document.getElementById(f[i][j]).innerHTML = "X";
+         f[i][j] = "X";
+         y = 1;
+     } else {
+         Player.innerHTML = "This is X Turn";
+         document.getElementById(f[i][j]).innerHTML = "O";
+         f[i][j] = "O";
+         y = 0;
+     }
 
-             if (y == 0) {
-                 Player.innerHTML = "This is O Turn";
-                 f[i][j] = "X";
-                 y = 1;
-             } else {
-                 Player.innerHTML = "This is X Turn";
-                 f[i][j] = "O";
-                 y = 0;
-             }return f[i][j];
-         }
+return f[i][j];
 
-
+}
 
 
 
@@ -58,7 +62,6 @@ function wincondition(i,j) {
         Player.innerHTML = "It's Tie Game";
     }
 }
-
 //reset function//
 
 function newgame() {
