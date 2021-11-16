@@ -13,35 +13,44 @@ function grid() {
         f[i] = [];
         for (let j=0;j<f.length;j++) {
             z = document.createElement("span");
-            f[i][j] = id;
             z.setAttribute("id", id);
+            z.setAttribute("class","box")
+            f[i][j] = id;
             id++;
             tab.append(z);
-        }
-        }
-    return z;
 
+        }
+        }
 }
-let y = 0;
 Player.innerHTML = "This is X Turn";
-function turn(i,j) {
-     if (y == 0) {
-         Player.innerHTML = "This is O Turn";
-         document.getElementById(f[i][j]).innerHTML = "X";
-         f[i][j] = "X";
-         y = 1;
-     } else {
-         Player.innerHTML = "This is X Turn";
-         document.getElementById(f[i][j]).innerHTML = "O";
-         f[i][j] = "O";
-         y = 0;
-     }
 
-return f[i][j];
+
+tab.querySelector(".box").forEach(item=> {
+            item.addEventListener("click", function () {
+                turn();
+            })
+        })
+
+
+let y = 0;
+function turn(i,j) {
+
+        if (y == 0) {
+            Player.innerHTML = "This is O Turn";
+            document.getElementById(f[i][j]).innerHTML = "x"
+            f[i][j] = "X";
+            y = 1;
+        } else {
+            Player.innerHTML = "This is X Turn";
+            document.getElementById(f[i][j]).innerHTML = "o"
+            f[i][j] = "O";
+            y = 0;
+        }
+
+        return f[i][j];
+
 
 }
-
-
 
 // Function win conditions//
 let winner = "";
