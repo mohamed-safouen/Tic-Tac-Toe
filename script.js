@@ -22,35 +22,33 @@ function grid() {
         }
         }
 }
+x=tab.getElementsByClassName("box");
+for (let i=0;i<x.length;i++){
+    x[i].addEventListener("click", function () {
+        turn()});}
 Player.innerHTML = "This is X Turn";
-
-
-tab.querySelector(".box").forEach(item=> {
-            item.addEventListener("click", function () {
-                turn();
-            })
-        })
-
-
 let y = 0;
 function turn(i,j) {
 
-        if (y == 0) {
-            Player.innerHTML = "This is O Turn";
-            document.getElementById(f[i][j]).innerHTML = "x"
-            f[i][j] = "X";
-            y = 1;
-        } else {
-            Player.innerHTML = "This is X Turn";
-            document.getElementById(f[i][j]).innerHTML = "o"
-            f[i][j] = "O";
-            y = 0;
-        }
+    if (y == 0) {
+        Player.innerHTML = "This is O Turn";
+        document.getElementById(f[i][j]).innerHTML = "x"
+        f[i][j] = "X";
+        y = 1;
+    } else {
+        Player.innerHTML = "This is X Turn";
+        document.getElementById(f[i][j]).innerHTML = "o"
+        f[i][j] = "O";
+        y = 0;
+    }
 
-        return f[i][j];
-
-
+    return f[i][j];
 }
+
+
+
+
+
 
 // Function win conditions//
 let winner = "";
