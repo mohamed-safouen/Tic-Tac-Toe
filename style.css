@@ -18,6 +18,7 @@ h1 {
     font-style: oblique;
     font-family: "Arial Black";
     font-size: 30px;
+
 }
 
 ol {
@@ -30,7 +31,7 @@ ol {
 #Player_turn {
     position: absolute;
     top: 350px;
-    left: 33%;
+    left: 32%;
     background-color: white;
     color: black;
     font-family: Algerian;
@@ -68,6 +69,22 @@ border: black solid 3px;
 
 }
 
+.box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
+    border-top: none;
+}
+.box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
+    border-left: none;
+}
+
+.box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
+    border-right: none;
+}
+
+.box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
+    border-bottom: none;
+}
+
+
 img{
     top: 23px;
     left: 23px;
@@ -76,15 +93,10 @@ img{
     display: inline-block;
 }
 
-
-
-
-
-
 .reset {
     position: absolute;
-    top: 800px;
-    left: 33%;
+    top: 750px;
+    left: 32%;
     background-color: white;
     font-family: Algerian;
     font-size: 20px;
@@ -96,7 +108,3 @@ img{
     cursor: pointer;
 
 }
-#0,#1,#2{border-top: red;}
-#0,#3,#6{border-left: none;}
-#2,#5,#8{border-right: none;}
-#6,#7,#8{border-bottom: none;}
