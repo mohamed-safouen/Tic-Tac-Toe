@@ -28,6 +28,7 @@ function player() {
         cross.src = "x.png";
         let circle = document.createElement("img");
         circle.src = "o.png";
+
         x[k].addEventListener("click", function () {
 
             if (y == 0) {
@@ -36,14 +37,14 @@ function player() {
                 f[k] = "X";
                 cross.append("X")
                 y = 1;
-
+                x[k].style.background=" rgba(0, 0, 0, 0.3)";
             } else {
                 Player.innerHTML = "This is X Turn";
                 document.getElementById(f[k]).appendChild(circle);
                 f[k] = "O";
                 circle.append("O")
                 y = 0;
-
+                x[k].style.background=" rgba(0, 0, 0, 0.3)";
             }
             return f[k];
 
@@ -54,14 +55,14 @@ function player() {
 
 
 // Function win conditions//
-
-let winner = ""
-const win = function wincondition() {
+let winner="";
+function wincondition() {
     for (let k = 0; k < x.length; k++) {
-        if ((winner == f[0] == f[1] == f[2]) || (winner == f[0] == f[3] == f[6]) || (winner == f[0] == f[4] == f[8]) ||
-            (winner == f[3] == f[4] == f[5]) || (winner == f[6] == f[7] == f[8]) || (winner == f[1] == f[4] == f[7]) ||
-            (winner == f[2] == f[5] == f[8]) || (winner == f[2] == f[4] == f[6])) {
-            if (winner == "X") {
+        if (( f[0] == f[1] == f[2]) || ( f[0] == f[3] == f[6]) || ( f[0] == f[4] == f[8]) ||
+            ( f[3] == f[4] == f[5]) || ( f[6] == f[7] == f[8]) || (f[1] == f[4] == f[7]) ||
+            ( f[2] == f[5] == f[8]) || ( f[2] == f[4] == f[6])) {
+
+            if ("X") {
                 alert("X win");
                 Player.innerHTML = "Player X win";
                 winner.style.background = "red";
@@ -79,6 +80,7 @@ const win = function wincondition() {
 
     }
 }
+
 
 //reset function//
 
