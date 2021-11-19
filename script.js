@@ -37,15 +37,15 @@ function player() {
                 f[k] = "X";
                 cross.append("X")
                 y = 1;
-                x[k].style.background=" rgba(0, 0, 0, 0.3)";
-               wincondition()
+                x[k].style.background = " rgba(0, 0, 0, 0.3)";
+                wincondition()
             } else {
                 Player.innerHTML = "This is X Turn";
                 document.getElementById(f[k]).appendChild(circle);
                 f[k] = "O";
                 circle.append("O")
                 y = 0;
-                x[k].style.background=" rgba(0, 0, 0, 0.3)";
+                x[k].style.background = " rgba(0, 0, 0, 0.3)";
                 wincondition()
             }
 
@@ -62,37 +62,27 @@ function player() {
 
 function wincondition() {
 
-    if     ((f[0] == 'X' && f[1] == 'X' && f[2] == 'X') || (f[0] == 'X' && f[3] == 'X' && f[6] == 'X') || (f[0] == 'X' && f[4] =='X' && f[8] == 'X') ||
-            (f[3] == 'X' && f[4] == 'X' && f[5] == 'X') || (f[6] == 'X' && f[7] == 'X' && f[8] == 'X') || (f[1] == 'X' && f[4] =='X' && f[7] == 'X') ||
-            (f[2] == 'X' && f[5] == 'X' && f[8] == 'X') || (f[2] == 'X' && f[4] == 'X' && f[6] == 'X')) {
-                Player.innerHTML = "Player X win";
-                alert("x win");
+    if ((f[0] == 'X' && f[1] == 'X' && f[2] == 'X') || (f[0] == 'X' && f[3] == 'X' && f[6] == 'X') || (f[0] == 'X' && f[4] == 'X' && f[8] == 'X') ||
+        (f[3] == 'X' && f[4] == 'X' && f[5] == 'X') || (f[6] == 'X' && f[7] == 'X' && f[8] == 'X') || (f[1] == 'X' && f[4] == 'X' && f[7] == 'X') ||
+        (f[2] == 'X' && f[5] == 'X' && f[8] == 'X') || (f[2] == 'X' && f[4] == 'X' && f[6] == 'X')) {
+        Player.innerHTML = "Player X win";
+        alert("x win");
         newgame()
-            }
-    else if ((f[0] == 'O' && f[1] == 'O' && f[2] == 'O') || (f[0] == 'O' && f[3] == 'O' && f[6] == 'O') || (f[0] == 'O' && f[4] =='O' && f[8] == 'O') ||
-             (f[3] == 'O' && f[4] == 'O' && f[5] == 'O') || (f[6] == 'O' && f[7] == 'O' && f[8] == 'O') || (f[1] == 'O' && f[4] =='O' && f[7] == 'O') ||
-             (f[2] == 'O' && f[5] == 'O' && f[8] == 'O') || (f[2] == 'O' && f[4] == 'O' && f[6] == 'O')) {
-                Player.innerHTML = "Player O win";
-                alert("O win");
+    } else if ((f[0] == 'O' && f[1] == 'O' && f[2] == 'O') || (f[0] == 'O' && f[3] == 'O' && f[6] == 'O') || (f[0] == 'O' && f[4] == 'O' && f[8] == 'O') ||
+        (f[3] == 'O' && f[4] == 'O' && f[5] == 'O') || (f[6] == 'O' && f[7] == 'O' && f[8] == 'O') || (f[1] == 'O' && f[4] == 'O' && f[7] == 'O') ||
+        (f[2] == 'O' && f[5] == 'O' && f[8] == 'O') || (f[2] == 'O' && f[4] == 'O' && f[6] == 'O')) {
+        Player.innerHTML = "Player O win";
+        alert("O win");
         newgame()
-            }
-    else if ((f[0] == 'X' || f[0] == 'O')  && (f[1] == 'X' || f[1] == 'O')  && (f[2] == 'X' || f[2] == 'O')  &&
-    (f[3] == 'X' || f[3] == 'O')  && (f[4] == 'X' || f[4] == 'O')  && (f[5] == 'X' || f[5] == 'O')  &&
-    (f[6] == 'X' || f[6] == 'O')  && (f[7] == 'X' || f[7] == 'O')  && (f[8] == 'X' || f[8] == 'O')) {
+    } else if ((f[0] == 'X' || f[0] == 'O') && (f[1] == 'X' || f[1] == 'O') && (f[2] == 'X' || f[2] == 'O') &&
+        (f[3] == 'X' || f[3] == 'O') && (f[4] == 'X' || f[4] == 'O') && (f[5] == 'X' || f[5] == 'O') &&
+        (f[6] == 'X' || f[6] == 'O') && (f[7] == 'X' || f[7] == 'O') && (f[8] == 'X' || f[8] == 'O')) {
         Player.innerHTML = "Tie Game";
         alert("Tie Game");
         newgame()
     }
 
-    }
-
-
-
-
-
-
-
-
+}
 
 //reset function//
 
@@ -102,7 +92,7 @@ function newgame() {
         document.getElementById(f[k]).innerHTML = "";
         y = 0;
         Player.innerHTML = "This is X Turn";
-        x[k].style.background=" rgba(0, 0, 0, 0.0)";
+        x[k].style.background = " rgba(0, 0, 0, 0.0)";
     }
 }
 
