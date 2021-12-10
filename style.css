@@ -148,7 +148,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 32%;
         background-color: white;
         color: black;
@@ -164,7 +164,7 @@ img {
 
     #table {
         position: absolute;
-        top: 40%;
+        top: 55%;
         left: 15%;
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -210,7 +210,7 @@ img {
 
     .reset {
         position: absolute;
-        top: 82%;
+        top: 98%;
         left: 33%;
         background-color: white;
         font-family: Algerian;
@@ -262,7 +262,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 45%;
+        top: 60%;
         left: 32%;
         background-color: white;
         color: black;
@@ -278,7 +278,7 @@ img {
 
     #table {
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 20%;
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -324,7 +324,7 @@ img {
 
     .reset {
         position: absolute;
-        top: 93%;
+        top: 110%;
         left: 32%;
         background-color: white;
         font-family: Algerian;
@@ -333,6 +333,120 @@ img {
         border-radius: 25%;
         text-align: center;
         width: 25%;
+        height: auto;
+        cursor: pointer;
+
+    }
+
+
+}
+@media only screen and (min-width:769px) and (max-width:1211px) {
+
+    header {
+        text-align: 50%;
+        font-family: Algerian;
+        font-size: 300%;
+        border: 5px solid cadetblue;
+        background-color: lightblue;
+        margin-top: 1%;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 90px 0 90px 0;
+    }
+
+    h1 {
+        font-style: oblique;
+        text-align: 350%;
+        font-family: "Times New Roman";
+        margin-left: 10%;
+        font-size: 200%;
+
+    }
+
+    ol {
+        border: black solid 2px;
+        border-radius: 5%;
+        margin-right: 3%;
+        background-color: aliceblue;
+        font-size: 100%;
+        font-weight: bolder;
+        font-family: "Times New Roman";
+        font-style: italic;
+    }
+
+    #Player_turn {
+        position: absolute;
+        top: 45%;
+        left: 36%;
+        background-color: white;
+        color: black;
+        font-family: Algerian;
+        font-size: 90%;
+        border: 2px solid black;
+        border-radius: 25%;
+        text-align: center;
+        width: 15%;
+        height: auto;
+
+    }
+
+    #table {
+        position: absolute;
+        top: 50%;
+        left: 24%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 40%;
+        height: 40%;
+        margin: auto;
+
+    }
+
+    .box {
+        font-family: "Permanent Marker", cursive;
+        text-align: center;
+        width: 98%;
+        height: 98%;
+        border: black solid 3px;
+        cursor: pointer;
+
+
+    }
+
+    .box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
+        border-top: none;
+    }
+
+    .box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
+        border-left: none;
+    }
+
+    .box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
+        border-right: none;
+    }
+
+    .box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
+        border-bottom: none;
+    }
+
+
+    img {
+        height: 2em;
+        width: 2em;
+        display: inline-block;
+    }
+
+    .reset {
+        position: absolute;
+        top: 95%;
+        left: 36%;
+        background-color: white;
+        font-family: Algerian;
+        font-size: 90%;
+        border: 2px solid black;
+        border-radius: 25%;
+        text-align: center;
+        width: 15%;
         height: auto;
         cursor: pointer;
 
