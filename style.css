@@ -92,8 +92,8 @@ ol {
 
 
 img {
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
     display: inline-block;
 }
 
@@ -117,12 +117,11 @@ img {
     header {
         text-align: 50%;
         font-family: Algerian;
-        font-size: 200%;
+        font-size: 110%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         margin-top: 1%;
         margin-left: 20%;
-        margin-right: 23%;
         border-radius: 90px 0 90px 0;
     }
 
@@ -174,40 +173,6 @@ img {
 
     }
 
-    .box {
-        font-family: "Permanent Marker", cursive;
-        text-align: center;
-        width: 98%;
-        height: 98%;
-        border: black solid 3px;
-        cursor: pointer;
-
-
-    }
-
-    .box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
-        border-top: none;
-    }
-
-    .box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
-        border-left: none;
-    }
-
-    .box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
-        border-right: none;
-    }
-
-    .box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
-        border-bottom: none;
-    }
-
-
-    img {
-        height: 1.5em;
-        width: 1.5em;
-        display: inline-block;
-    }
-
     .reset {
         position: absolute;
         top: 98%;
@@ -231,12 +196,11 @@ img {
     header {
         text-align: 50%;
         font-family: Algerian;
-        font-size: 300%;
+        font-size: 200%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         margin-top: 1%;
         margin-left: 20%;
-        margin-right: 20%;
         border-radius: 90px 0 90px 0;
     }
 
@@ -288,39 +252,6 @@ img {
 
     }
 
-    .box {
-        font-family: "Permanent Marker", cursive;
-        text-align: center;
-        width: 98%;
-        height: 98%;
-        border: black solid 3px;
-        cursor: pointer;
-
-
-    }
-
-    .box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
-        border-top: none;
-    }
-
-    .box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
-        border-left: none;
-    }
-
-    .box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
-        border-right: none;
-    }
-
-    .box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
-        border-bottom: none;
-    }
-
-
-    img {
-        height: 2em;
-        width: 2em;
-        display: inline-block;
-    }
 
     .reset {
         position: absolute;
@@ -345,12 +276,11 @@ img {
     header {
         text-align: 50%;
         font-family: Algerian;
-        font-size: 300%;
+        font-size: 230%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         margin-top: 1%;
         margin-left: 20%;
-        margin-right: 20%;
         border-radius: 90px 0 90px 0;
     }
 
@@ -398,42 +328,8 @@ img {
         grid-template-columns: repeat(3, auto);
         width: 40%;
         height: 40%;
-        margin: auto;
-
-    }
-
-    .box {
-        font-family: "Permanent Marker", cursive;
-        text-align: center;
-        width: 98%;
-        height: 98%;
-        border: black solid 3px;
-        cursor: pointer;
 
 
-    }
-
-    .box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
-        border-top: none;
-    }
-
-    .box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
-        border-left: none;
-    }
-
-    .box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
-        border-right: none;
-    }
-
-    .box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
-        border-bottom: none;
-    }
-
-
-    img {
-        height: 2em;
-        width: 2em;
-        display: inline-block;
     }
 
     .reset {
