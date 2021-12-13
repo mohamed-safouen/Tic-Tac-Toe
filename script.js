@@ -59,7 +59,7 @@ function player() {
       let image = createPlayerBoxImage(p)
       document.getElementById(`box-${f[k]}`).appendChild(image);
       f[k] = p.name;
-      x[k].style.background = " rgba(0, 0, 0, 0.3)";
+      x[k].style.background = " rgba(0, 0, 0, 0.2)";
       wincondition()
       p = switchP(p);
       Player.innerHTML = `This is ${p.name} Turn`;
@@ -74,7 +74,7 @@ function wincondition() {
 
   let r = winner(f)
   if (r==="X") {
-      Player.innerHTML = "Player X win";
+      Player.innerHTML = "Player x win";
       alert("x win");
   } else if (r === "O") {
       Player.innerHTML = "Player O win";
