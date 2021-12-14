@@ -20,7 +20,8 @@ header {
 h1 {
     font-style: oblique;
     font-family: "Times New Roman", serif;
-    margin-left: 10%;
+    margin-top: 4%;
+    margin-left: 70%;
     font-size: 200%;
 
 }
@@ -28,7 +29,9 @@ h1 {
 ol {
     border: lightblue solid 2px;
     border-radius: 5%;
-    margin-right: 30%;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 70%;
     background-color:rgba(236, 243, 244, 0.38);
     font-size: 150%;
     font-weight: bolder;
@@ -38,13 +41,13 @@ ol {
 
 #Player_turn {
     position: absolute;
-    top: 55%;
-    left: 34%;
-    background-color: rgb(62,186,212);
-    color: black;
+    top: 22%;
+    left: 33%;
+    background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+    color: #fff;
+    padding: 10px 10px;
     font-family: Lucida Console, serif ;
     font-size: 110%;
-    border: 2px solid black;
     border-radius: 25%;
     text-align: center;
     width: 13%;
@@ -54,7 +57,7 @@ ol {
 
 #table {
     position: absolute;
-    top: 62%;
+    top: 30%;
     left: 25%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -102,7 +105,7 @@ img {
 
 .reset {
     position: absolute;
-    top: 117%;
+    top: 85%;
     left: 38%;
     border-radius: 25%;
     width: 50px;
@@ -147,9 +150,10 @@ img {
         position: absolute;
         top: 50%;
         left: 36%;
-        background-color: rgb(62,186,212);
-        color: black;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
         font-family: Lucida Console, serif ;
+        padding: 2% 2%;
         font-size: 70%;
         border: 2px solid black;
         border-radius: 25%;
@@ -238,9 +242,10 @@ img {
         position: absolute;
         top: 60%;
         left: 32%;
-        background-color: rgb(62,186,212);
-        color: black;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
         font-family: Lucida Console, serif ;
+        padding: 2% 2%;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
@@ -322,9 +327,10 @@ img {
         position: absolute;
         top: 65%;
         left: 36%;
-        background-color: rgb(62,186,212);
-        color: black;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
         font-family: Lucida Console, serif ;
+        padding: 2% 2%;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
@@ -398,9 +404,10 @@ img {
         position: absolute;
         top: 45%;
         left: 36%;
-        background-color: rgb(62,186,212);
-        color: black;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
         font-family: Lucida Console, serif ;
+        padding: 2% 2%;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
