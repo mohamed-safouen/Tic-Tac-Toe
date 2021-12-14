@@ -59,7 +59,7 @@ function player() {
       let image = createPlayerBoxImage(p)
       document.getElementById(`box-${f[k]}`).appendChild(image);
       f[k] = p.name;
-      x[k].style.background = " rgba(0, 0, 0, 0.2)";
+      x[k].style.background = " rgba(0, 0, 0, 0.1)";
       wincondition()
       p = switchP(p);
       Player.innerHTML = `This is ${p.name} Turn`;
