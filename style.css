@@ -12,8 +12,8 @@ header {
     padding-left: 2%;
     padding-right: 2%;
     margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 49%;
+    margin-left: 28%;
+    margin-right: 45%;
     border-radius: 90px 0 90px 0;
 }
 
@@ -231,9 +231,10 @@ img {
     ol {
         border: black solid 2px;
         border-radius: 5%;
-        margin-right: 3%;
+        margin-left: 2%;
+        margin-right: 10%;
         background-color:rgba(236, 243, 244, 0.38);
-        font-size: 100%;
+        font-size: 110%;
         font-weight: bolder;
         font-family: "Times New Roman", serif;
         font-style: italic;
@@ -241,7 +242,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 60%;
+        top: 45%;
         left: 32%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -257,8 +258,8 @@ img {
 
     #table {
         position: absolute;
-        top: 65%;
-        left: 20%;
+        top: 54%;
+        left: 22%;
         display: grid;
         grid-template-columns: repeat(3, auto);
         width: 50%;
@@ -279,10 +280,10 @@ img {
 
     .reset {
         position: absolute;
-        top: 110%;
-        left: 32%;
+        top: 115%;
+        left: 41%;
         border-radius: 25%;
-        width: 25%;
+        width: 12%;
         height: auto;
         cursor: pointer;
 
@@ -294,20 +295,21 @@ img {
 
     header {
         font-family: Algerian, serif;
-        font-size: 200%;
+        font-size: 300%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         padding-left: 2%;
         padding-right: 2%;
         margin-top: 1%;
-        margin-left: 20%;
+        margin-left: 25%;
+        margin-right: 42%;
         border-radius: 90px 0 90px 0;
     }
 
     h1 {
         font-style: oblique;
         font-family: "Times New Roman", serif;
-        margin-left: 10%;
+        margin-left: 70%;
         font-size: 200%;
 
     }
@@ -315,9 +317,9 @@ img {
     ol {
         border: black solid 2px;
         border-radius: 5%;
-        margin-right: 3%;
+        margin-right: 2%;
         background-color:rgba(236, 243, 244, 0.38);
-        font-size: 100%;
+        font-size: 130%;
         font-weight: bolder;
         font-family: "Times New Roman", serif;
         font-style: italic;
@@ -325,8 +327,8 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 65%;
-        left: 36%;
+        top: 20%;
+        left: 25%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
         font-family: Lucida Console, serif ;
@@ -341,8 +343,8 @@ img {
 
     #table {
         position: absolute;
-        top: 70%;
-        left: 24%;
+        top: 38%;
+        left: 19%;
         display: grid;
         grid-template-columns: repeat(3, auto);
         width: 40%;
@@ -356,7 +358,7 @@ img {
         top: 95%;
         left: 36%;
         border-radius: 25%;
-        width: 15%;
+        width: 7%;
         height: auto;
         cursor: pointer;
 
