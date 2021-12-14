@@ -193,7 +193,8 @@ img {
         top: 90%;
         left: 43%;
         border-radius: 25%;
-        width: 14%;
+        width: 10%;
+        height: auto;
         cursor: pointer;
 
     }
