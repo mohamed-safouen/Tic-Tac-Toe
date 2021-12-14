@@ -104,7 +104,7 @@ img {
 
 .reset {
     position: absolute;
-    top: 115%;
+    top: 117%;
     left: 38%;
     background-color: white;
     font-family: Algerian;
@@ -154,7 +154,7 @@ img {
     #Player_turn {
         position: absolute;
         top: 50%;
-        left: 32%;
+        left: 36%;
         background-color: rgb(62,186,212);
         color: black;
         font-family:Lucida Console ;
@@ -188,16 +188,20 @@ img {
         margin: auto;
 
     }
+    img {
+        margin-top: 0.9em;
+        height: 3em;
+        width: 3.5em;
+        display: inline-block;
 
 
     .reset {
         position: absolute;
-        top: 98%;
+        top: 60%;
         left: 33%;
         background-color: white;
         font-family: Algerian;
         font-size: 70%;
-        border: 2px solid black;
         border-radius: 25%;
         text-align: center;
         width: 22%;
