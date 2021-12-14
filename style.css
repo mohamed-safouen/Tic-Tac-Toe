@@ -5,8 +5,7 @@ body {
 }
 
 header {
-    text-align: 50%;
-    font-family: Algerian;
+    font-family: Algerian, sans-serif;
     font-size: 300%;
     border: 5px solid cadetblue;
     background-color: lightblue;
@@ -20,8 +19,7 @@ header {
 
 h1 {
     font-style: oblique;
-    text-align: 350%;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     margin-left: 10%;
     font-size: 200%;
 
@@ -34,7 +32,7 @@ ol {
     background-color:rgba(236, 243, 244, 0.38);
     font-size: 150%;
     font-weight: bolder;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     font-style: italic;
 }
 
@@ -44,7 +42,7 @@ ol {
     left: 34%;
     background-color: rgb(62,186,212);
     color: black;
-    font-family:Lucida Console ;
+    font-family: Lucida Console, serif ;
     font-size: 110%;
     border: 2px solid black;
     border-radius: 25%;
@@ -106,11 +104,7 @@ img {
     position: absolute;
     top: 117%;
     left: 38%;
-    background-color: white;
-    font-family: Algerian;
-    font-size: 20px;
     border-radius: 25%;
-    text-align: center;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -119,8 +113,7 @@ img {
 @media screen and (max-width:425px) {
 
     header {
-        text-align: 50%;
-        font-family: Algerian;
+        font-family: Algerian, serif;
         font-size: 110%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -133,8 +126,7 @@ img {
 
     h1 {
         font-style: oblique;
-        text-align: 350%;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         margin-left: 10%;
         font-size: 150%;
 
@@ -147,7 +139,7 @@ img {
         background-color:rgba(236, 243, 244, 0.38);
         font-size: 75%;
         font-weight: bolder;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         font-style: italic;
     }
 
@@ -157,7 +149,7 @@ img {
         left: 36%;
         background-color: rgb(62,186,212);
         color: black;
-        font-family:Lucida Console ;
+        font-family: Lucida Console, serif ;
         font-size: 70%;
         border: 2px solid black;
         border-radius: 25%;
@@ -193,6 +185,7 @@ img {
         height: 3em;
         width: 3.5em;
         display: inline-block;
+    }
 
 
     .reset {
@@ -210,8 +203,7 @@ img {
 @media only screen and (min-width:426px) and (max-width:768px) {
 
     header {
-        text-align: 50%;
-        font-family: Algerian;
+        font-family: Algerian, serif;
         font-size: 200%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -224,8 +216,7 @@ img {
 
     h1 {
         font-style: oblique;
-        text-align: 350%;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         margin-left: 10%;
         font-size: 200%;
 
@@ -238,7 +229,7 @@ img {
         background-color:rgba(236, 243, 244, 0.38);
         font-size: 100%;
         font-weight: bolder;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         font-style: italic;
     }
 
@@ -248,7 +239,7 @@ img {
         left: 32%;
         background-color: rgb(62,186,212);
         color: black;
-        font-family:Lucida Console ;
+        font-family: Lucida Console, serif ;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
@@ -277,18 +268,14 @@ img {
         border: rgba(53, 46, 49, 0.33) solid 2px;
         cursor: pointer;
         margin: auto;
+    }
 
 
     .reset {
         position: absolute;
         top: 110%;
         left: 32%;
-        background-color: white;
-        font-family: Algerian;
-        font-size: 90%;
-        border: 2px solid black;
         border-radius: 25%;
-        text-align: center;
         width: 25%;
         height: auto;
         cursor: pointer;
@@ -300,8 +287,7 @@ img {
 @media only screen and (min-width:769px) and (max-width:1024px) {
 
     header {
-        text-align: 50%;
-        font-family: Algerian;
+        font-family: Algerian, serif;
         font-size: 200%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -314,8 +300,7 @@ img {
 
     h1 {
         font-style: oblique;
-        text-align: 350%;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         margin-left: 10%;
         font-size: 200%;
 
@@ -328,7 +313,7 @@ img {
         background-color:rgba(236, 243, 244, 0.38);
         font-size: 100%;
         font-weight: bolder;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         font-style: italic;
     }
 
@@ -338,7 +323,7 @@ img {
         left: 36%;
         background-color: rgb(62,186,212);
         color: black;
-        font-family:Lucida Console ;
+        font-family: Lucida Console, serif ;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
@@ -364,12 +349,7 @@ img {
         position: absolute;
         top: 95%;
         left: 36%;
-        background-color: white;
-        font-family: Algerian;
-        font-size: 90%;
-        border: 2px solid black;
         border-radius: 25%;
-        text-align: center;
         width: 15%;
         height: auto;
         cursor: pointer;
@@ -381,8 +361,8 @@ img {
 @media only screen and (min-width:1025px) and (max-width:1211px) {
 
     header {
-        text-align: 50%;
-        font-family: Algerian;
+
+        font-family: Algerian, serif;
         font-size: 230%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -395,8 +375,8 @@ img {
 
     h1 {
         font-style: oblique;
-        text-align: 350%;
-        font-family: "Times New Roman";
+
+        font-family: "Times New Roman", serif;
         margin-left: 10%;
         font-size: 200%;
 
@@ -409,7 +389,7 @@ img {
         background-color:rgba(236, 243, 244, 0.38);
         font-size: 100%;
         font-weight: bolder;
-        font-family: "Times New Roman";
+        font-family: "Times New Roman", serif;
         font-style: italic;
     }
 
@@ -419,7 +399,7 @@ img {
         left: 36%;
         background-color: rgb(62,186,212);
         color: black;
-        font-family:Lucida Console ;
+        font-family: Lucida Console, serif ;
         font-size: 90%;
         border: 2px solid black;
         border-radius: 25%;
@@ -445,12 +425,7 @@ img {
         position: absolute;
         top: 95%;
         left: 36%;
-        background-color: white;
-        font-family: Algerian;
-        font-size: 90%;
-        border: 2px solid black;
         border-radius: 25%;
-        text-align: center;
         width: 15%;
         height: auto;
         cursor: pointer;
