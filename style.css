@@ -197,15 +197,10 @@ img {
 
     .reset {
         position: absolute;
-        top: 60%;
-        left: 33%;
-        background-color: white;
-        font-family: Algerian;
-        font-size: 70%;
+        top: 90%;
+        left: 43%;
         border-radius: 25%;
-        text-align: center;
-        width: 22%;
-        height: auto;
+        width: 14%;
         cursor: pointer;
 
     }
