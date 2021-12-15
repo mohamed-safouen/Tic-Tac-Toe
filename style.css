@@ -1,6 +1,6 @@
 body {
-    background: url("font.png") no-repeat ;
-    background-size:cover;
+background-color: #DBF3FA;
+
 }
 
 
@@ -102,6 +102,20 @@ img {
     width: 4.5em;
     display: inline-block;
 }
+#winner{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+    color: #fff;
+    font-family: Lucida Console, serif ;
+    padding: 1.2% 1.2%;
+    font-size: 110%;
+    border-radius: 25%;
+    text-align: center;
+    width: 10%;
+    height: 3%;
+}
 
 .reset {
     position: absolute;
@@ -191,12 +205,26 @@ img {
         width: 3.5em;
         display: inline-block;
     }
+    #winner{
+        position: absolute;
+        top: 92%;
+        left: 42%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 70%;
+        border-radius: 25%;
+        text-align: center;
+        width: 10%;
+        height: 3%;
+    }
 
 
     .reset {
         position: absolute;
-        top: 93%;
-        left: 42%;
+        top: 95%;
+        left: 42.5%;
         border-radius: 25%;
         width: 11%;
         height: auto;
@@ -276,14 +304,28 @@ img {
         cursor: pointer;
         margin: auto;
     }
+    #winner{
+        position: absolute;
+        top: 115%;
+        left: 38%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 98%;
+        border-radius: 25%;
+        text-align: center;
+        width: 15%;
+        height: 3%;
+    }
 
 
     .reset {
         position: absolute;
-        top: 115%;
+        top: 120%;
         left: 41%;
         border-radius: 25%;
-        width: 12%;
+        width: 11%;
         height: auto;
         cursor: pointer;
 
@@ -434,6 +476,212 @@ img {
         left: 36%;
         border-radius: 25%;
         width: 15%;
+        height: auto;
+        cursor: pointer;
+
+    }
+
+}
+/*for 2k resolution*/
+@media only screen and (min-width:1212px) and (max-width:1440px) {
+
+    header {
+
+        font-family: Algerian, serif;
+        font-size: 380%;
+        border: 5px solid cadetblue;
+        background-color: lightblue;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 1%;
+        margin-left: 20%;
+        margin-right: 44%;
+        border-radius: 90px 0 90px 0;
+    }
+
+    h1 {
+        font-style: oblique;
+        font-family: "Times New Roman", serif;
+        margin-left: 70%;
+        font-size: 250%;
+
+    }
+
+    ol {
+        border: black solid 2px;
+        border-radius: 5%;
+        margin-right: 3%;
+        background-color:rgba(236, 243, 244, 0.38);
+        font-size: 200%;
+        font-weight: bolder;
+        font-family: "Times New Roman", serif;
+        font-style: italic;
+    }
+
+    #Player_turn {
+        position: absolute;
+        top: 13%;
+        left: 32%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 2% 2%;
+        font-size: 150%;
+        border-radius: 25%;
+        text-align: center;
+        width: 15%;
+        height: auto;
+
+    }
+
+    #table {
+        position: absolute;
+        top: 20%;
+        left: 24%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 35%;
+        height: 40%;
+    }
+    .box {
+        font-family: "Permanent Marker", cursive;
+        text-align: center;
+        width: 10em;
+        height: 10em;
+        border: rgba(53, 46, 49, 0.33) solid 5px;
+        cursor: pointer;
+        margin: auto;
+    }
+    #winner{
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 255%;
+        border-radius: 25%;
+        text-align: center;
+        width: 10%;
+        height: 5%;
+    }
+
+
+    .reset {
+        position: absolute;
+        top: 61%;
+        left: 38%;
+        border-radius: 25%;
+        width: 8%;
+        height: auto;
+        cursor: pointer;
+
+    }
+
+
+}
+/*for 4k resolution*/
+@media only screen and (min-width:1441px) and (max-width:2560px) {
+
+    header {
+
+        font-family: Algerian, serif;
+        font-size: 500%;
+        border: 5px solid cadetblue;
+        background-color: lightblue;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 1%;
+        margin-left: 30%;
+        border-radius: 90px 0 90px 0;
+    }
+
+    h1 {
+        font-style: oblique;
+        font-family: "Times New Roman", serif;
+        margin-top: 10%;
+        margin-left: 70%;
+        font-size: 350%;
+
+    }
+
+    ol {
+        border: black solid 2px;
+        border-radius: 5%;
+        margin-right: 3%;
+        background-color:rgba(236, 243, 244, 0.38);
+        font-size: 270%;
+        font-weight: bolder;
+        font-family: "Times New Roman", serif;
+        font-style: italic;
+    }
+
+    #Player_turn {
+        position: absolute;
+        top: 22%;
+        left: 32%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 170%;
+        border-radius: 25%;
+        text-align: center;
+        width: 15%;
+        height: auto;
+
+    }
+
+    #table {
+        position: absolute;
+        top: 35%;
+        left: 24%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 32%;
+        height: 40%;
+
+
+    }
+    .box {
+        font-family: "Permanent Marker", cursive;
+        text-align: center;
+        width: 17em;
+        height: 15em;
+        border: rgba(53, 46, 49, 0.33) solid 5px;
+        cursor: pointer;
+        margin: auto;
+
+
+    }
+    img {
+        margin-top: 0.9em;
+        height: 11em;
+        width: 10em;
+        display: inline-block;
+    }
+    #winner{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+    color: #fff;
+    font-family: Lucida Console, serif ;
+    padding: 1.2% 1.2%;
+    font-size: 350%;
+    border-radius: 25%;
+    text-align: center;
+    width: 10%;
+    height: 5%;
+}
+
+    .reset {
+        position: absolute;
+        top: 97%;
+        left: 37%;
+        border-radius: 25%;
+        width: 6%;
         height: auto;
         cursor: pointer;
 

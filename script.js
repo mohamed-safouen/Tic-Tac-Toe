@@ -1,6 +1,7 @@
 let tab = document.getElementById("table");
 let f = new Array(9);
 let Player = document.getElementById("Player_turn");
+let win=document.getElementById("winner");
 
 z = document.createElement("div");
 
@@ -74,13 +75,13 @@ function wincondition() {
 
   let r = winner(f)
   if (r==="X") {
-      Player.innerHTML = "Player x win";
+      win.innerHTML = "x win";
       alert("x win");
   } else if (r === "O") {
-      Player.innerHTML = "Player O win";
+      win.innerHTML = "O win";
       alert("O win");
   } else if (r === "T") {
-      Player.innerHTML = "Tie Game";
+      win.innerHTML = "Tie Game";
       alert("Tie Game");
   }
 }
@@ -154,6 +155,7 @@ function getDiags(f) {
 function reset() {
   let t = document.getElementById("table")
   t.innerHTML = ""
+  win.innerHTML= ""
 }
 
 
