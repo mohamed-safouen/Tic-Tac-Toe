@@ -5,7 +5,7 @@ background-color: #DBF3FA;
 
 
 header {
-    font-family: Algerian, sans-serif;
+    font-family: 'Dancing Script', cursive;;
     font-size: 300%;
     border: 5px solid cadetblue;
     background-color: lightblue;
@@ -129,15 +129,15 @@ img {
 @media screen and (max-width:425px) {
 
     header {
-        font-family: Algerian, serif;
-        font-size: 100%;
+        font-family: 'Dancing Script', cursive;
+        font-size: 170%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         padding-left: 2%;
         padding-right: 2%;
         margin-top: 1%;
-        margin-left: 20%;
-        margin-right: 44%;
+        margin-left: 25%;
+        margin-right: 28%;
         border-radius: 90px 0 90px 0;
     }
 
@@ -163,28 +163,28 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 33%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
         font-family: Lucida Console, serif ;
         padding: 1% 1%;
-        font-size: 70%;
+        font-size: 73%;
         border-radius: 25%;
         text-align: center;
         width: 25%;
-        height: auto;
+        height: 2%;
 
     }
 
     #table {
         position: absolute;
-        top: 55%;
+        top: 30%;
         left: 15%;
         display: grid;
         grid-template-columns: repeat(3, auto);
         width: 30%;
-        height: 30%;
+        height: 26%;
         margin: auto;
 
     }
@@ -206,8 +206,8 @@ img {
     }
     #winner{
         position: absolute;
-        top: 92%;
-        left: 42%;
+        top: 57%;
+        left: 38%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
         font-family: Lucida Console, serif ;
@@ -222,8 +222,8 @@ img {
 
     .reset {
         position: absolute;
-        top: 95%;
-        left: 42.5%;
+        top: 61%;
+        left: 38.5%;
         border-radius: 25%;
         width: 11%;
         height: auto;
@@ -236,7 +236,7 @@ img {
 @media only screen and (min-width:426px) and (max-width:768px) {
 
     header {
-        font-family: Algerian, serif;
+        font-family: 'Dancing Script', cursive;;
         font-size: 200%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -329,7 +329,7 @@ img {
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
     header {
-        font-family: Algerian, serif;
+        font-family: 'Dancing Script', cursive;
         font-size: 300%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -486,24 +486,22 @@ img {
 @media only screen and (min-width:1212px) and (max-width:1440px) {
 
     header {
-
-        font-family: Algerian, serif;
         font-size: 380%;
         border: 5px solid cadetblue;
         background-color: lightblue;
         padding-left: 2%;
         padding-right: 2%;
         margin-top: 1%;
-        margin-left: 20%;
-        margin-right: 44%;
+        margin-left: 27%;
+        margin-right: 40%;
         border-radius: 90px 0 90px 0;
     }
 
     legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
-        margin-left: 70%;
-        font-size: 250%;
+        margin-left: 2%;
+        font-size: 150%;
 
     }
 
@@ -536,12 +534,12 @@ img {
 
     #table {
         position: absolute;
-        top: 20%;
+        top: 22%;
         left: 24%;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        width: 35%;
-        height: 40%;
+        width: 34%;
+        height: 42%;
     }
     .box {
         font-family: "Permanent Marker", cursive;
@@ -554,7 +552,7 @@ img {
     }
     #winner{
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 3%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -570,10 +568,10 @@ img {
 
     .reset {
         position: absolute;
-        top: 61%;
+        top: 74%;
         left: 38%;
         border-radius: 25%;
-        width: 8%;
+        width: 6%;
         height: auto;
         cursor: pointer;
 
@@ -586,7 +584,6 @@ img {
 
     header {
 
-        font-family: Algerian, serif;
         font-size: 500%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -601,8 +598,8 @@ img {
         font-style: oblique;
         font-family: "Times New Roman", serif;
         margin-top: 10%;
-        margin-left: 70%;
-        font-size: 350%;
+        margin-left: 2%;
+        font-size: 220%;
 
     }
 
@@ -619,7 +616,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 22%;
+        top: 12%;
         left: 32%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -635,7 +632,7 @@ img {
 
     #table {
         position: absolute;
-        top: 35%;
+        top: 18%;
         left: 24%;
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -663,22 +660,22 @@ img {
     }
     #winner{
     position: absolute;
-    top: 55%;
+    top: 33%;
     left: 3%;
     background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
     color: #fff;
     font-family: Lucida Console, serif ;
     padding: 1.2% 1.2%;
-    font-size: 350%;
+    font-size: 250%;
     border-radius: 25%;
     text-align: center;
     width: 10%;
-    height: 5%;
+    height: 3%;
 }
 
     .reset {
         position: absolute;
-        top: 97%;
+        top: 62%;
         left: 37%;
         border-radius: 25%;
         width: 6%;
