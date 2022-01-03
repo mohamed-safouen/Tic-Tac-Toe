@@ -17,17 +17,16 @@ header {
     border-radius: 90px 0 90px 0;
 }
 
-h1 {
+legend {
     font-style: oblique;
     font-family: "Times New Roman", serif;
     margin-top: 3%;
-    margin-left: 70%;
+    margin-left: 3%;
     font-size: 200%;
 
 }
 
-ol {
-    border: lightblue solid 2px;
+fieldset{
     border-radius: 5%;
     margin-top: 2%;
     margin-right: 3%;
@@ -142,7 +141,7 @@ img {
         border-radius: 90px 0 90px 0;
     }
 
-    h1 {
+    legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
         margin-left: 10%;
@@ -150,7 +149,7 @@ img {
 
     }
 
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-left: 2%;
@@ -248,7 +247,7 @@ img {
         border-radius: 90px 0 90px 0;
     }
 
-    h1 {
+    legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
         margin-left: 10%;
@@ -256,7 +255,7 @@ img {
 
     }
 
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-left: 2%;
@@ -270,7 +269,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 45%;
+        top: 33%;
         left: 32%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -286,7 +285,7 @@ img {
 
     #table {
         position: absolute;
-        top: 54%;
+        top: 40%;
         left: 22%;
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -306,7 +305,7 @@ img {
     }
     #winner{
         position: absolute;
-        top: 115%;
+        top: 88%;
         left: 38%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -318,20 +317,15 @@ img {
         width: 15%;
         height: 3%;
     }
-
-
     .reset {
         position: absolute;
-        top: 120%;
+        top: 92%;
         left: 41%;
         border-radius: 25%;
         width: 11%;
         height: auto;
         cursor: pointer;
-
     }
-
-
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
     header {
@@ -346,16 +340,13 @@ img {
         margin-right: 42%;
         border-radius: 90px 0 90px 0;
     }
-
-    h1 {
+    legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
-        margin-left: 70%;
+        margin-left: 10%;
         font-size: 200%;
-
     }
-
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-right: 2%;
@@ -368,7 +359,7 @@ img {
 
     #Player_turn {
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 25%;
         background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
         color: #fff;
@@ -379,24 +370,33 @@ img {
         text-align: center;
         width: 25%;
         height: auto;
-
     }
-
     #table {
         position: absolute;
-        top: 38%;
+        top: 19%;
         left: 19%;
         display: grid;
         grid-template-columns: repeat(3, auto);
         width: 40%;
         height: 40%;
-
-
     }
-
+    #winner{
+        position: absolute;
+        top: 38%;
+        left: 3%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 120%;
+        border-radius: 25%;
+        text-align: center;
+        width: 13%;
+        height: 3%;
+    }
     .reset {
         position: absolute;
-        top: 95%;
+        top: 60%;
         left: 36%;
         border-radius: 25%;
         width: 7%;
@@ -422,7 +422,7 @@ img {
         border-radius: 90px 0 90px 0;
     }
 
-    h1 {
+    legend {
         font-style: oblique;
 
         font-family: "Times New Roman", serif;
@@ -431,7 +431,7 @@ img {
 
     }
 
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-right: 3%;
@@ -499,7 +499,7 @@ img {
         border-radius: 90px 0 90px 0;
     }
 
-    h1 {
+    legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
         margin-left: 70%;
@@ -507,7 +507,7 @@ img {
 
     }
 
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-right: 3%;
@@ -597,7 +597,7 @@ img {
         border-radius: 90px 0 90px 0;
     }
 
-    h1 {
+    legend {
         font-style: oblique;
         font-family: "Times New Roman", serif;
         margin-top: 10%;
@@ -606,7 +606,7 @@ img {
 
     }
 
-    ol {
+    fieldset {
         border: black solid 2px;
         border-radius: 5%;
         margin-right: 3%;
