@@ -1,22 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
 body {
-background-color: #DBF3FA;
-
+    background-color: #DBF3FA;
 }
 
-
 header {
-    font-family: 'Dancing Script', cursive;;
-    font-size: 300%;
-    border: 5px solid cadetblue;
-    background-color: lightblue;
+    font-family: Eczar, sans-serif;
+    font-size: 500%;
+    color: white;
+    background:linear-gradient(to right,rgb(62,186,235),rgb(58,137,212));
     padding-left: 2%;
     padding-right: 2%;
     margin-top: 1%;
-    margin-left: 28%;
-    margin-right: 45%;
-    border-radius: 90px 0 90px 0;
+    margin-left: 22%;
+    margin-right: 44%;
+    border-radius: 45px 45px 45px 45px;
 }
-
 legend {
     font-style: oblique;
     font-family: "Times New Roman", serif;
@@ -40,7 +38,7 @@ fieldset{
 
 #Player_turn {
     position: absolute;
-    top: 22%;
+    top: 28%;
     left: 33%;
     background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
     color: #fff;
@@ -56,7 +54,7 @@ fieldset{
 
 #table {
     position: absolute;
-    top: 30%;
+    top: 38%;
     left: 25%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -103,7 +101,7 @@ img {
 }
 #winner{
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 3%;
     background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
     color: #fff;
@@ -118,13 +116,12 @@ img {
 
 .reset {
     position: absolute;
-    top: 86.5%;
+    top: 93.5%;
     left: 38%;
     border-radius: 25%;
     width: 50px;
     height: 50px;
     cursor: pointer;
-
 }
 @media screen and (max-width:425px) {
 
@@ -482,108 +479,11 @@ img {
     }
 
 }
-/*for 2k resolution*/
-@media only screen and (min-width:1212px) and (max-width:1440px) {
 
-    header {
-        font-size: 380%;
-        border: 5px solid cadetblue;
-        background-color: lightblue;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin-top: 1%;
-        margin-left: 27%;
-        margin-right: 40%;
-        border-radius: 90px 0 90px 0;
-    }
-
-    legend {
-        font-style: oblique;
-        font-family: "Times New Roman", serif;
-        margin-left: 2%;
-        font-size: 150%;
-
-    }
-
-    fieldset {
-        border: black solid 2px;
-        border-radius: 5%;
-        margin-right: 3%;
-        background-color:rgba(236, 243, 244, 0.38);
-        font-size: 200%;
-        font-weight: bolder;
-        font-family: "Times New Roman", serif;
-        font-style: italic;
-    }
-
-    #Player_turn {
-        position: absolute;
-        top: 13%;
-        left: 32%;
-        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
-        color: #fff;
-        font-family: Lucida Console, serif ;
-        padding: 2% 2%;
-        font-size: 150%;
-        border-radius: 25%;
-        text-align: center;
-        width: 15%;
-        height: auto;
-
-    }
-
-    #table {
-        position: absolute;
-        top: 22%;
-        left: 24%;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        width: 34%;
-        height: 42%;
-    }
-    .box {
-        font-family: "Permanent Marker", cursive;
-        text-align: center;
-        width: 10em;
-        height: 10em;
-        border: rgba(53, 46, 49, 0.33) solid 5px;
-        cursor: pointer;
-        margin: auto;
-    }
-    #winner{
-        position: absolute;
-        top: 40%;
-        left: 3%;
-        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
-        color: #fff;
-        font-family: Lucida Console, serif ;
-        padding: 1.2% 1.2%;
-        font-size: 255%;
-        border-radius: 25%;
-        text-align: center;
-        width: 10%;
-        height: 5%;
-    }
-
-
-    .reset {
-        position: absolute;
-        top: 74%;
-        left: 38%;
-        border-radius: 25%;
-        width: 6%;
-        height: auto;
-        cursor: pointer;
-
-    }
-
-
-}
 /*for 4k resolution*/
 @media only screen and (min-width:1441px) and (max-width:2560px) {
 
     header {
-
         font-size: 500%;
         border: 5px solid cadetblue;
         background-color: lightblue;
@@ -659,19 +559,19 @@ img {
         display: inline-block;
     }
     #winner{
-    position: absolute;
-    top: 33%;
-    left: 3%;
-    background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
-    color: #fff;
-    font-family: Lucida Console, serif ;
-    padding: 1.2% 1.2%;
-    font-size: 250%;
-    border-radius: 25%;
-    text-align: center;
-    width: 10%;
-    height: 3%;
-}
+        position: absolute;
+        top: 33%;
+        left: 3%;
+        background: linear-gradient(to right,rgb(62,186,212),rgb(58,137,212));
+        color: #fff;
+        font-family: Lucida Console, serif ;
+        padding: 1.2% 1.2%;
+        font-size: 250%;
+        border-radius: 25%;
+        text-align: center;
+        width: 10%;
+        height: 3%;
+    }
 
     .reset {
         position: absolute;
