@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    font-family: Eczar, sans-serif;
+    font-family: 'Itim', cursive;
     font-size: 500%;
     color: white;
     background: linear-gradient(to right, rgb(62, 186, 235), rgb(58, 137, 212));
@@ -13,7 +13,7 @@ header {
     padding-right: 2%;
     margin-top: 1%;
     margin-left: 22%;
-    margin-right: 44%;
+    margin-right: 33%;
     border-radius: 45px 45px 45px 45px;
 }
 
