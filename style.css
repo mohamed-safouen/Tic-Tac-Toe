@@ -103,6 +103,7 @@ img {
 }
 
 #winner {
+    visibility: hidden;
     position: absolute;
     top: 60%;
     left: 3%;

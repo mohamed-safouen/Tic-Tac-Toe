@@ -77,12 +77,15 @@ function wincondition() {
   if (r==="X") {
       win.innerHTML = "x win";
       alert("x win");
+    win.style.visibility="visible"
   } else if (r === "O") {
       win.innerHTML = "O win";
       alert("O win");
+    win.style.visibility="visible"
   } else if (r === "T") {
       win.innerHTML = "Tie Game";
       alert("Tie Game");
+    win.style.visibility="visible"
   }
 }
 
@@ -156,6 +159,7 @@ function reset() {
   let t = document.getElementById("table")
   t.innerHTML = ""
   win.innerHTML= ""
+  win.style.visibility="hidden"
 }
 
 
