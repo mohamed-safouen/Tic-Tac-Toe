@@ -3,8 +3,13 @@
 body {
     background-color: #DBF3FA;
 }
+main{
+    border: #DBF3FA solid 1px;
+    background-color: yellow;
+}
 
 header {
+    display: flex;
     font-family: 'Itim', cursive;
     font-size: 500%;
     color: white;
