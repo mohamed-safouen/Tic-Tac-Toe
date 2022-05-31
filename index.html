@@ -1,44 +1,33 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <title> Tic-Tac-Toe</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="normalize.css" rel="stylesheet"/>
-
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
 </head>
-<body  onload="initGame()">
 
-<HEADER>
-    <head>Tic-Tac-Toe</head>
-</HEADER>
-<fieldset>
-<legend>How to play</legend>
-    <ul>
-    <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+<body onload="initGame()">
+    <HEADER>
+        <div id="head">Tic-Tac-Toe</div>
+    </HEADER>
+    <section id="container">
+        <main id="main-game">
+            <div class="reset" id="Player_turn">
 
-    <li>You are X, your friend is O. Players take turns putting their marks in empty
-        squares.
-    </li>
+            </div>
 
-    <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+            <section id="table">
 
-    <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
-    </ul>
-</fieldset>
-<main id="main-game">
-<div id="Player_turn"></div>
-
-<section id="table"  >
-
-</section >
-<img src="replay.svg" title="Replay" class="reset" onclick="initGame()" alt=""/>
-</main>
-<div id="winner"></div>
+            </section>
+            <div id="rep" style="cursor:pointer" title="Replay" class="reset" onclick="initGame()">Replay</div>
+        </main>
+        <div id="winner"></div>
+    </section>
 
 
-
-<script type="text/javascript " src="script.js"></script>
+    <script type="text/javascript " src="script.js"></script>
 
 
 </body>

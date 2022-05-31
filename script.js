@@ -24,19 +24,19 @@ function initGrid() {
 }
 
 x = document.getElementsByClassName("box");
-Player.innerHTML = "This is X Turn";
+Player.innerHTML = "X Turn";
 
 
 let pO = {
   name: "O",
   y: 1,
-  imageSrc: "o.png"
+  imageSrc: "icon/o.png"
 }
 
 let pX = {
   name: "X",
   y: 0,
-  imageSrc: "x.png"
+  imageSrc: "icon/x.png"
 }
 
 function switchP(player) {
@@ -63,7 +63,7 @@ function player() {
       x[k].style.background = " rgba(0, 0, 0, 0.1)";
       wincondition()
       p = switchP(p);
-      Player.innerHTML = `This is ${p.name} Turn`;
+      Player.innerHTML = ` ${p.name} Turn`;
     })
   }
 }
@@ -77,15 +77,15 @@ function wincondition() {
   if (r==="X") {
       win.innerHTML = "x win";
       alert("x win");
-    win.style.visibility="visible"
+    
   } else if (r === "O") {
       win.innerHTML = "O win";
       alert("O win");
-    win.style.visibility="visible"
+    
   } else if (r === "T") {
       win.innerHTML = "Tie Game";
       alert("Tie Game");
-    win.style.visibility="visible"
+   
   }
 }
 
