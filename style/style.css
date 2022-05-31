@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'gotcha';
-    src: url('/font/myfont.ttf');
+    src: url('../font/myfont.ttf');
 }
 
 * {
