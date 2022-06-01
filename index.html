@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width">
     <title> Tic-Tac-Toe</title>
-    <link href="style/style.css" rel="stylesheet" />
-    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet"/>
+    <link href="style/normalize.css" rel="stylesheet"/>
 </head>
+<body  onload="initGame()">
+<HEADER>
+    <div id="head">Tic-Tac-Toe</div>
+</HEADER>
+<section id="container">
+<main id="main-game">
+<div class="reset" id="Player_turn">
+    
+    </div>
 
-<body onload="initGame()">
-    <HEADER>
-        <div id="head">Tic-Tac-Toe</div>
-    </HEADER>
-    <section id="container">
-        <main id="main-game">
-            <div class="reset" id="Player_turn">
+<section id="table" >
 
-            </div>
-
-            <section id="table">
-
-            </section>
-            <div id="rep" style="cursor:pointer" title="Replay" class="reset" onclick="initGame()">Replay</div>
-        </main>
-        <div id="winner"></div>
-    </section>
+</section >
+<div id="rep" style="cursor:pointer" title="Replay" class="reset" onclick="initGame()">Replay</div>
+</main>
+<div id="winner"></div>
+</section>
 
 
-    <script type="text/javascript " src="script.js"></script>
-
+<script type="text/javascript " src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 

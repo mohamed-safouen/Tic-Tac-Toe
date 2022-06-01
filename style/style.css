@@ -1,149 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 @font-face {
     font-family: 'gotcha';
     src: url('../font/myfont.ttf');
-    font-weight: bold;
 }
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
-
 body {
     background-color: #066163;
-    height: fit-content;
+       
 }
-
-#container {
-    margin: 0 12rem;
+#container{
+     margin: 0 12rem;
 }
-
-#main-game {
+#main-game{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     border: #F2F2F2 solid 2px;
     background-color: #CDBE78;
-    margin: 5em auto;
+    margin: 5em auto;   
     width: 26em;
     border-radius: 44px;
 }
-
-header {
+header{
     width: 100%;
-    background-color: #383838;
-    margin: 0 0 2em 0;
+    background-color:#383838;
+    margin: 0 0 2em 0;  
 }
-
-header #head {
+header #head{
     text-align: center;
     margin: 0 auto;
     padding: 1.5em 4em;
     color: #F2F2F2;
     font-family: 'gotcha';
     font-size: 3.8em;
-}
+  }
 
 
 #table {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto); 
     margin: 3em auto;
-}
-
+  }
 .box {
-    text-align: center;
-    width: 8em;
-    height: 7.5em;
-    border: rgb(56 56 56) solid 2px;
+text-align: center;
+width: 8em;
+height: 7.5em;
+border: rgba(53, 46, 49, 0.33) solid 2px;
     cursor: pointer;
 }
 
-.box:nth-child(1),
-.box:nth-child(2),
-.box:nth-child(3) {
+.box:nth-child(1), .box:nth-child(2), .box:nth-child(3) {
     border-top: none;
 }
 
-.box:nth-child(1),
-.box:nth-child(4),
-.box:nth-child(7) {
+.box:nth-child(1), .box:nth-child(4), .box:nth-child(7) {
     border-left: none;
 }
 
-.box:nth-child(3),
-.box:nth-child(6),
-.box:nth-child(9) {
+.box:nth-child(3), .box:nth-child(6), .box:nth-child(9) {
     border-right: none;
 }
 
-.box:nth-child(7),
-.box:nth-child(8),
-.box:nth-child(9) {
+.box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
     border-bottom: none;
 }
 
 
 img {
-    margin: 0.9em;
-    height: 70%;
-    width: 70%;
+margin: 0.9em;
+height: 70%;
+width: 70%;
 }
 
 #main-game .reset {
-    border: solid #066163 5px;
-    border-radius: 32%;
-    text-align: center;
-    margin: 2em auto auto;
-    color: #066163;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
-    padding: 0.5em 2em;
-    font-weight: bolder;
+border: solid #066163 5px;
+border-radius: 32%;
+text-align: center;
+margin: 2em auto auto;
+color: #066163;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.8em;
+padding: 0.5em 2em;
+font-weight: bolder;
 }
-
-#rep {
+#rep{
     margin: 1em auto !important;
 }
+.swal-modal {
+    width: 50%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10001;
+    transition: opacity .2s,-webkit-transform .3s;
+    transition: transform .3s,opacity .2s;
+    transition: transform .3s,opacity .2s,-webkit-transform .3s;
+}
+.swal-title {
+    color:#066163;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    font-size: 4rem;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+}
+.swal-button {
+    background-color: #7b7248;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+}
+.swal-button:not([disabled]):hover {
+    background-color: #043a3c;
+  }
 
 /*Media Queries*/
+
+   
+
 @media only screen and (max-width: 768px) {
-    header #head {
-        font-size: 2.8em;
-        padding: 1.5em 0em;
-    }
-
-    #container {
-        margin: 0 10rem;
-    }
-
-    #main-game {
-        width: 20em;
-        margin: 5em 0;
-    }
-
-    .box {
-        width: 6.5em;
-        height: 6.5em;
-    }
+header #head{
+    font-size: 2.8em;
+    padding: 1.5em 0em;
+}
+#container {
+    margin: 0 10rem;
+}
+#main-game{
+    width: 20em;
+margin: 5em 0;
+}
+.box{
+       width: 6.5em;
+       height: 6.5em;
+   }
+.swal-title{
+    font-size: 2.4rem;
+   }
+.swal-button{
+    font-size: 0.8rem;
+}
 }
 
 @media only screen and (max-width: 546px) {
-    header #head {
-
+    header #head{
+        
         padding: 1.5em 0em;
     }
-
     #container {
         margin: 0 2.4rem;
     }
-
-    #table {
+    #table{
         margin: 1em auto;
     }
+    .swal-title{
+        font-size: 1.8rem;
+       }
+    .swal-button{
+        font-size: 0.6rem;
+    }
 }
+
+

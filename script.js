@@ -75,16 +75,22 @@ function wincondition() {
 
   let r = winner(f)
   if (r==="X") {
-      win.innerHTML = "x win";
-      alert("x win");
+      swal({
+        title: "Player X Win",
+        button: "Back!",
+      });
     
   } else if (r === "O") {
-      win.innerHTML = "O win";
-      alert("O win");
+    swal({
+      title: "Player O Win",
+      button: "Back!",
+    });
     
   } else if (r === "T") {
-      win.innerHTML = "Tie Game";
-      alert("Tie Game");
+    swal({
+      title: "Tie Game",
+      button: "Back!",
+    });
    
   }
 }
