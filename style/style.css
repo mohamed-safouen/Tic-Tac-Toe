@@ -51,7 +51,7 @@ header #head{
 text-align: center;
 width: 8em;
 height: 7.5em;
-border: rgba(53, 46, 49, 0.33) solid 2px;
+border: rgb(56 56 56) solid 2px;
     cursor: pointer;
 }
 
