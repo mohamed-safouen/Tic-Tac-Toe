@@ -79,19 +79,19 @@ function wincondition() {
         title: "Player X Win",
         button: "Back!",
       });
-    
+      initGame()
   } else if (r === "O") {
     swal({
       title: "Player O Win",
       button: "Back!",
     });
-    
+    initGame()
   } else if (r === "T") {
     swal({
       title: "Tie Game",
       button: "Back!",
     });
-   
+    initGame()
   }
 }
 
