@@ -11,47 +11,45 @@
     
 }
 body {
-    background-color: #066163;
+    background-color: white;
        
 }
 #container{
      margin: 0 12rem;
+     
 }
 #main-game{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    border: #F2F2F2 solid 2px;
-    background-color: #CDBE78;
-    margin: 5em auto;   
-    width: 26em;
-    border-radius: 44px;
+    border: "#11a4a6" solid 10px;   
+    width: 15em;
+    box-shadow: 0 0 10px rgb(140, 143, 144);
+    height: 25em;
 }
 header{
     width: 100%;
-    background-color:#383838;
     margin: 0 0 2em 0;  
 }
 header #head{
     text-align: center;
     margin: 0 auto;
-    padding: 1.5em 4em;
+    padding: 0.5em 2em;
     color: #F2F2F2;
     font-family: 'gotcha';
-    font-size: 3.8em;
+    font-size: 2.8em;
+    background-color: black;
   }
-
-
 #table {
     display: grid;
     grid-template-columns: repeat(3, auto); 
-    margin: 3em auto;
+    margin: 1em auto; 
   }
 .box {
 text-align: center;
-width: 8em;
-height: 7.5em;
-border: rgb(56 56 56) solid 2px;
+width: 4em;
+height: 3.5em;
+border: rgba(0, 0, 0, 0.407) solid 2px;
     cursor: pointer;
 }
 
@@ -71,29 +69,19 @@ border: rgb(56 56 56) solid 2px;
     border-bottom: none;
 }
 
-
 img {
-margin: 0.9em;
+margin: 0.5em;
 height: 70%;
-width: 70%;
+width: 50%;
 }
 
-#main-game .reset {
-border: solid #066163 5px;
-border-radius: 32%;
-text-align: center;
-margin: 2em auto auto;
-color: #066163;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1.8em;
-padding: 0.5em 2em;
-font-weight: bolder;
+#main-game .reset { border: solid gray 1px; border-radius: 50%; text-align: center; margin: 1em auto; color:white;background-color: rgb(179, 175, 175); font-family: Arial, Helvetica, sans-serif; font-size: 1.1; padding: 1em; font-weight: 700; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
 }
 #rep{
     margin: 1em auto !important;
 }
 .swal-modal {
-    width: 50%;
+    width: 30%;
     opacity: 0;
     pointer-events: none;
     background-color: #F2F2F2;
@@ -113,31 +101,33 @@ font-weight: bolder;
     transition: transform .3s,opacity .2s,-webkit-transform .3s;
 }
 .swal-title {
-    color:#066163;
+    color:#11a4a6;
     font-weight: 600;
     text-transform: none;
     position: relative;
     display: block;
     padding: 13px 16px;
-    font-size: 4rem;
+    font-size: 1.5rem;
     line-height: normal;
     text-align: center;
     margin-bottom: 0;
 }
 .swal-button {
-    background-color: #7b7248;
-    color: #fff;
+    background-color: white;
+    color: black;
     border: none;
     box-shadow: none;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1.2rem;
     padding: 10px 24px;
     margin: 0;
+    border: 1px black solid;
     cursor: pointer;
 }
 .swal-button:not([disabled]):hover {
-    background-color: #043a3c;
+    background-color: black;
+    color: white;
   }
 
 /*Media Queries*/
@@ -146,19 +136,20 @@ font-weight: bolder;
 
 @media only screen and (max-width: 768px) {
 header #head{
-    font-size: 2.8em;
-    padding: 1.5em 0em;
+    font-size: 1.8em;
+    padding: 0.5em 0em;
 }
 #container {
-    margin: 0 10rem;
+    margin: 0 5rem;
 }
 #main-game{
-    width: 20em;
-margin: 5em 0;
+    width: 18em;
+height: 90%;
+padding: 0;
 }
 .box{
-       width: 6.5em;
-       height: 6.5em;
+       width: 5.5em;
+       height: 5.5em;
    }
 .swal-title{
     font-size: 2.4rem;
@@ -170,18 +161,20 @@ margin: 5em 0;
 
 @media only screen and (max-width: 546px) {
     header #head{
-        
-        padding: 1.5em 0em;
+        padding: 1em 0em;
     }
     #container {
-        margin: 0 2.4rem;
+        width:90%;
+        margin: 0 auto;
+        
+        
     }
     #main-game{
         width: 20em;
-    margin: 5em -1em;
+        height: 90%;
 }
     #table{
-        margin: 1em auto;
+        margin: 0 auto;
     }
     .swal-title{
         font-size: 1.5rem;

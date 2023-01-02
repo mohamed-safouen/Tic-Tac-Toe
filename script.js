@@ -24,20 +24,23 @@ function initGrid() {
 }
 
 x = document.getElementsByClassName("box");
-Player.innerHTML = "X Turn";
+Player.innerHTML = "X";
+Player.style.backgroundColor = "#348cd4";
 
 
 let pO = {
   name: "O",
   y: 1,
-  imageSrc: "icon/o.png"
-}
+  imageSrc: "icon/o.png",
+  bg: "#11a4a6",
+};
 
 let pX = {
   name: "X",
   y: 0,
-  imageSrc: "icon/x.png"
-}
+  imageSrc: "icon/x.png",
+  bg: "#348cd4",
+};
 
 function switchP(player) {
   return player.y ? pX : pO;
@@ -63,7 +66,8 @@ function player() {
       x[k].style.background = " rgba(0, 0, 0, 0.1)";
       wincondition()
       p = switchP(p);
-      Player.innerHTML = ` ${p.name} Turn`;
+      Player.innerHTML = ` ${p.name}`;
+      Player.style.backgroundColor=`${p.bg}`
     })
   }
 }
