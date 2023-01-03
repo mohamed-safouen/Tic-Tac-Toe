@@ -25,21 +25,22 @@ function initGrid() {
 
 x = document.getElementsByClassName("box");
 Player.innerHTML = "X";
-Player.style.backgroundColor = "#348cd4";
+Player.style.color = "#f92f60";
+
 
 
 let pO = {
   name: "O",
   y: 1,
-  imageSrc: "icon/o.png",
-  bg: "#11a4a6",
+  imageSrc: "cercle",
+  color: "#3ba8d7",
 };
 
 let pX = {
   name: "X",
   y: 0,
-  imageSrc: "icon/x.png",
-  bg: "#348cd4",
+  imageSrc: "close",
+  color: "#f92f60",
 };
 
 function switchP(player) {
@@ -50,9 +51,9 @@ function switchP(player) {
 let p = pX
 
 function createPlayerBoxImage(player) {
-  let e = document.createElement("img");
-  e.src = player.imageSrc;
-  e.append(player.name)
+  let e = document.createElement("div");
+  e.classList.add(`${player.imageSrc}`);
+ 
   return e;
 }
 
@@ -64,10 +65,11 @@ function player() {
       document.getElementById(`box-${f[k]}`).appendChild(image);
       f[k] = p.name;
       x[k].style.background = " rgba(0, 0, 0, 0.1)";
-      wincondition()
+      wincondition();
       p = switchP(p);
       Player.innerHTML = ` ${p.name}`;
-      Player.style.backgroundColor=`${p.bg}`
+      Player.style.color = ` ${p.color}`;
+      
     })
   }
 }
@@ -76,7 +78,6 @@ function player() {
 // Function win conditions//
 
 function wincondition() {
-
   let r = winner(f)
   if (r==="X") {
       swal({
@@ -89,6 +90,7 @@ function wincondition() {
       title: "Player O Win",
       button: "Back!",
     });
+    document.getElementsByClassName("swal-title").style.color = "#3ba8d7";
     initGame()
   } else if (r === "T") {
     swal({

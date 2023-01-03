@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@font-face {
-    font-family: 'gotcha';
-    src: url('../font/myfont.ttf');
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -23,9 +20,8 @@ body {
     flex-direction: column;
     margin: 0 auto;
     border: "#11a4a6" solid 10px;   
-    width: 15em;
-    box-shadow: 0 0 10px rgb(140, 143, 144);
-    height: 25em;
+    width: 18rem;
+    
 }
 header{
     width: 100%;
@@ -34,11 +30,23 @@ header{
 header #head{
     text-align: center;
     margin: 0 auto;
-    padding: 0.5em 2em;
-    color: #F2F2F2;
-    font-family: 'gotcha';
-    font-size: 2.8em;
-    background-color: black;
+    padding: 0 2em;
+    
+    color:#545454 ;
+    font-family: 'Inter';
+ font-style: normal;
+  font-weight: 500;
+font-size: 5rem;
+line-height: 105px;
+word-spacing: 5px;
+  }
+  header #head::before{
+    color: #3ba8d7;
+    content: "Tic ";
+  }
+   header #head::after{
+    color:#f92f60 ;
+    content: " Toe";
   }
 #table {
     display: grid;
@@ -47,9 +55,9 @@ header #head{
   }
 .box {
 text-align: center;
-width: 4em;
-height: 3.5em;
-border: rgba(0, 0, 0, 0.407) solid 2px;
+width: 6rem;
+height: 5.5rem;
+border: 4.4086px solid #4b4949;
     cursor: pointer;
 }
 
@@ -69,22 +77,61 @@ border: rgba(0, 0, 0, 0.407) solid 2px;
     border-bottom: none;
 }
 
-img {
-margin: 0.5em;
-height: 70%;
-width: 50%;
-}
 
-#main-game .reset { border: solid gray 1px; border-radius: 50%; text-align: center; margin: 1em auto; color:white;background-color: rgb(179, 175, 175); font-family: Arial, Helvetica, sans-serif; font-size: 1.1; padding: 1em; font-weight: 700; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
+#main-game .reset {
+    border: solid gray 1px;
+    border-radius:25%;
+    text-align: center;
+    margin: 1em auto;
+    color:#545454;
+    background-color: rgb(254, 249, 249);
+    font-family: "Inter";
+    font-size: 1.1;
+    padding: 0.5em 1em;
+    font-weight: 900;
+    -webkit-border-radius:25%;
+    -moz-border-radius:25%;
+    -ms-border-radius:25%;
+    -o-border-radius:25%;
 }
 #rep{
     margin: 1em auto !important;
 }
+.close {
+  position: relative;
+  
+}
+.close:after {
+    position: absolute;
+    top: -0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274C";
+    font-size: 4.2em;
+    line-height: 100px;
+    text-align: center;
+    
+  }
+ .cercle{
+    width: 4.2em;
+    height: 4.2em;
+    margin: 0.4em auto;
+    align-items: center;
+    border-radius: 45px;
+    background: transparent;
+    border:#3ba8d7 solid 8px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
 .swal-modal {
     width: 30%;
     opacity: 0;
     pointer-events: none;
-    background-color: #F2F2F2;
+    background-color: #000000c7;
     text-align: center;
     border-radius: 5px;
     position: static;
@@ -101,7 +148,7 @@ width: 50%;
     transition: transform .3s,opacity .2s,-webkit-transform .3s;
 }
 .swal-title {
-    color:#11a4a6;
+    color:white;
     font-weight: 600;
     text-transform: none;
     position: relative;
@@ -111,6 +158,7 @@ width: 50%;
     line-height: normal;
     text-align: center;
     margin-bottom: 0;
+   
 }
 .swal-button {
     background-color: white;
@@ -136,11 +184,10 @@ width: 50%;
 
 @media only screen and (max-width: 768px) {
 header #head{
-    font-size: 1.8em;
-    padding: 0.5em 0em;
+    font-size: 4.3rem;
 }
 #container {
-    margin: 0 5rem;
+    margin: -2rem 5rem;
 }
 #main-game{
     width: 18em;
@@ -161,11 +208,11 @@ padding: 0;
 
 @media only screen and (max-width: 546px) {
     header #head{
-        padding: 1em 0em;
+        padding: 1rem 0 0.2rem 0;
     }
     #container {
         width:90%;
-        margin: 0 auto;
+        margin: -2em auto;
         
         
     }
