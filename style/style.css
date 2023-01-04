@@ -79,13 +79,16 @@ border: 4.4086px solid #4b4949;
 
 
 #main-game .reset {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
     border: solid gray 1px;
     border-radius:25%;
     text-align: center;
     margin: 1em auto;
     color:#545454;
     background-color: rgb(254, 249, 249);
-    font-family: "Inter";
+    font-family: "Arial";
     font-size: 1.1;
     padding: 0.5em 1em;
     font-weight: 900;
@@ -128,7 +131,7 @@ border: 4.4086px solid #4b4949;
 }
 
 .swal-modal {
-    width: 30%;
+    width: 50%;
     opacity: 0;
     pointer-events: none;
     background-color: #000000c7;
@@ -184,7 +187,7 @@ border: 4.4086px solid #4b4949;
 
 @media only screen and (max-width: 768px) {
 header #head{
-    font-size: 4.3rem;
+    font-size: 8vh;
 }
 #container {
     margin: -2rem 5rem;
@@ -209,12 +212,11 @@ padding: 0;
 @media only screen and (max-width: 546px) {
     header #head{
         padding: 1rem 0 0.2rem 0;
+        font-size: 8vh;
     }
     #container {
         width:90%;
-        margin: -2em auto;
-        
-        
+        margin: -2em auto; 
     }
     #main-game{
         width: 20em;
